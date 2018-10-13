@@ -4,16 +4,45 @@
     font-family: "funFont";
     src: url("fonts/mix-vielle-re.woff") format('woff');
 } */
+table {
+  /* position: block; */
+  /* max-width: 100%; */
+  border-collapse: collapse;
+}
+
 table, td, th, tr {
   border: black solid 2px;
 }
 
-tr:first-child {
-  background: #DAE2E2;
+thead {
   font-size: 24px;
   font: serif;
-}
-
-#c-heading {
   align-content: center;
 }
+
+thead th {
+  position: sticky;
+  top: 0;
+  background: #000000;
+  color: #FFFFFF;
+  padding: 10px;
+}
+
+thead, tbody {
+  /* display: table-header-group; */
+  /* display: table; */
+  /* width: 100%; */
+}
+
+tr td{
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background: #DEDBDB;
+  font: sans-serif;
+}
+
+/* tr:nth-child(even) {
+  font: sans-serif;
+} */
