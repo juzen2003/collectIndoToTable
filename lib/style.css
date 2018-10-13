@@ -4,3 +4,6 @@
     font-family: "funFont";
     src: url("fonts/mix-vielle-re.woff") format('woff');
 } */
+table, td, tr {
+  border: black solid 2px;
+}
