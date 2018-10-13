@@ -5,33 +5,38 @@
     src: url("fonts/mix-vielle-re.woff") format('woff');
 } */
 table {
-  /* position: block; */
-  /* max-width: 100%; */
   border-collapse: collapse;
 }
 
-table, td, th, tr {
+table, td, tr, th {
   border: black solid 2px;
 }
 
 thead {
-  font-size: 24px;
   font: serif;
-  align-content: center;
+  text-align: center;
 }
 
 thead th {
   position: sticky;
   top: 0;
-  background: #000000;
-  color: #FFFFFF;
+  left: 0;
+  /* background: #000000; */
+  background: #ACAAAA;
+  /* color: #FFFFFF; */
+  color: #000000;
   padding: 10px;
+  /* border: black solid 2px; */
 }
 
-thead, tbody {
-  /* display: table-header-group; */
-  /* display: table; */
-  /* width: 100%; */
+/* this is to workaround the repaint of sticky header after scrolling */
+th:after{
+    content:'';
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    border-bottom: black solid 2px;
 }
 
 tr td{
@@ -39,10 +44,11 @@ tr td{
 }
 
 tr:nth-child(even) {
-  background: #DEDBDB;
+  background: #F5F2F2;
   font: sans-serif;
 }
 
-/* tr:nth-child(even) {
+tr:nth-child(odd) {
   font: sans-serif;
-} */
+  background: #FFFFFF;
+}
