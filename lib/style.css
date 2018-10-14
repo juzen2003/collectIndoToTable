@@ -58,3 +58,15 @@ tr:nth-child(odd) {
 td, thead {
   overflow-wrap: break-word
 }
+
+/* modal */
+#myModal {
+  position: absolute;
+}
+
+.modal-dialog {
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+}
