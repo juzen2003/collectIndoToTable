@@ -13,7 +13,7 @@ table, td, tr, th {
 }
 
 thead {
-  font: serif;
+  font-family: serif;
   text-align: center;
 }
 
@@ -26,7 +26,8 @@ thead th {
   /* color: #FFFFFF; */
   color: #000000;
   padding: 10px;
-  /* border: black solid 2px; */
+  font-family: serif;
+  font-weight: bold;
 }
 
 /* this is to workaround the repaint of sticky header after scrolling */
@@ -45,10 +46,14 @@ tr td{
 
 tr:nth-child(even) {
   background: #F5F2F2;
-  font: sans-serif;
+  font-family: sans-serif;
 }
 
 tr:nth-child(odd) {
-  font: sans-serif;
+  font-family: sans-serif;
   background: #FFFFFF;
+}
+
+td, thead {
+  overflow-wrap: break-word
 }
