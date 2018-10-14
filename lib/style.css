@@ -28,6 +28,7 @@ thead th {
   padding: 10px;
   font-family: serif;
   font-weight: bold;
+  cursor: pointer;
 }
 
 /* this is to workaround the repaint of sticky header after scrolling */
