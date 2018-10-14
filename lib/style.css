@@ -61,7 +61,7 @@ td, thead {
 
 /* modal */
 #myModal {
-  position: absolute;
+  position: relative;
 }
 
 .modal-dialog {
@@ -69,4 +69,9 @@ td, thead {
   width: 100%;
   margin: 0;
   padding: 10px;
+}
+
+/* allow background scrolling */
+body.modal-open {
+  overflow: visible;
 }
