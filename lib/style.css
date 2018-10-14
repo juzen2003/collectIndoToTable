@@ -75,3 +75,19 @@ td, thead {
 body.modal-open {
   overflow: visible;
 }
+
+/* for modal info scrolling */
+#myModal-body {
+  height: 300px;
+  overflow-y: auto;
+}
+
+#myModal-title, #myModal-body h6 {
+  text-shadow: 2px 1px #B2AFAF;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#myModal-title {
+  font-size: 36px;
+}
